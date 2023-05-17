@@ -1,13 +1,13 @@
-package com.devanddel.springexample.features.menus.domain;
+package com.devanddel.springexample.features.menus.domain.models;
 
 public class Menu {
     private String entrante;
-    private String Stringprincipal;
+    private String principal;
     private String postre;
 
-    public Menu(String entrante, String stringprincipal, String postre) {
+    public Menu(String entrante, String principal, String postre) {
         this.entrante = entrante;
-        Stringprincipal = stringprincipal;
+        this.principal = principal;
         this.postre = postre;
     }
 
@@ -15,8 +15,8 @@ public class Menu {
         return entrante;
     }
 
-    public String getStringprincipal() {
-        return Stringprincipal;
+    public String getPrincipal() {
+        return principal;
     }
 
     public String getPostre() {

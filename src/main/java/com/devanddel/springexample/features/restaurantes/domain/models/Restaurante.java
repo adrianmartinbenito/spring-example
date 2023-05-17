@@ -1,4 +1,4 @@
-package com.devanddel.springexample.features.menus.domain;
+package com.devanddel.springexample.features.restaurantes.domain.models;
 
 public class Restaurante {
     private String nombreRest;

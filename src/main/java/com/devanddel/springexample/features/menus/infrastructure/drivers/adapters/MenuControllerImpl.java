@@ -1,7 +1,8 @@
 package com.devanddel.springexample.features.menus.infrastructure.drivers.adapters;
 
-import com.devanddel.springexample.features.menus.domain.*;
+import com.devanddel.springexample.features.menus.infrastructure.drivens.ports.*;
 import com.devanddel.springexample.features.menus.infrastructure.drivers.ports.*;
+import com.devanddel.springexample.features.recomendaciones.domain.models.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class MenuControllerImpl implements MenuController {
 
     @Autowired
-    MenuDao menuDao;
+    private MenuDao menuDao;
 
     @Override
     @GetMapping(value="/menu/{category}", produces= MediaType.APPLICATION_JSON_VALUE)

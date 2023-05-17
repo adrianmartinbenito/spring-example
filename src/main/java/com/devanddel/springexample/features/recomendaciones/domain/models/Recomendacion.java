@@ -1,6 +1,7 @@
-package com.devanddel.springexample.features.menus.domain;
+package com.devanddel.springexample.features.recomendaciones.domain.models;
 
-import ch.qos.logback.core.pattern.util.*;
+import com.devanddel.springexample.features.menus.domain.models.*;
+import com.devanddel.springexample.features.restaurantes.domain.models.*;
 
 public class Recomendacion {
      private Menu menu;

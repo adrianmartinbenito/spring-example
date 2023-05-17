@@ -1,11 +1,15 @@
-package com.devanddel.springexample.features.menus.domain;
+package com.devanddel.springexample.features.menus.infrastructure.drivens.adapters;
 
+import com.devanddel.springexample.features.menus.domain.models.*;
+import com.devanddel.springexample.features.menus.infrastructure.drivens.ports.*;
+import com.devanddel.springexample.features.recomendaciones.domain.models.*;
+import com.devanddel.springexample.features.restaurantes.domain.models.*;
 import org.springframework.beans.factory.annotation.*;
 import org.springframework.jdbc.core.namedparam.*;
 import org.springframework.stereotype.*;
 
 @Repository
-public class MenuDaoImpl implements MenuDao{
+public class MenuDaoImpl implements MenuDao {
 
     @Autowired
     private NamedParameterJdbcOperations jdbcTemplate;
