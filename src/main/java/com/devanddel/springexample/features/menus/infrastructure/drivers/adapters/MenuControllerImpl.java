@@ -14,11 +14,14 @@ public class MenuControllerImpl implements MenuController {
     private MenuDao menuDao;
 
     @Override
-    @GetMapping(value="/menu/{category}", produces= MediaType.APPLICATION_JSON_VALUE)
-    public Recomendacion getMenu(@PathVariable String category){
-        if(category.equals("healthy")){
+    @GetMapping(value="/menu/{menuType}", produces= MediaType.APPLICATION_JSON_VALUE)
+    public Recomendacion getMenu(@PathVariable String menuType){
+        if(menuType.equals("healthy")){
+            return menuDao.getMenuHealthy();
+        } else {
             return menuDao.getMenu();
         }
-        return null;
     }
+
+
 }

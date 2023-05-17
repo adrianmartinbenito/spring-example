@@ -4,4 +4,5 @@ import com.devanddel.springexample.features.recomendaciones.domain.models.*;
 
 public interface MenuDao {
     public Recomendacion getMenu();
+    public Recomendacion getMenuHealthy();
 }
